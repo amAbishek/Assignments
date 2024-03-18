@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        background-color: black;
+      }
+      nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      button {
+        background-color: red;
+        color: white;
+        align-items: center;
+        padding: 15px;
+
+        border-radius: 20px;
+      }
+      #div1 {
+        margin: 10px;
+      }
+
+      #con {
+        padding: 20px;
+      }
+
+      #div2 {
+        background-color: bisque;
+        /* margin: 10px; */
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 100px;
+      }
+      img {
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
+        border-top-right-radius: 300px;
+        border-bottom-right-radius: 300px;
+      }
+      #div3 {
+        padding: 20px;
+        margin: 10px;
+      }
+      h1 {
+        color: white;
+      }
+      .dropdown {
+        display: inline;
+        position: relative;
+      }
+      .dropdown-options {
+        display: none;
+        position: absolute;
+        overflow: auto;
+      }
+
+      .dropdown:hover .dropdown-options {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div id="con">
+        <h1>COOL!</h1>
+      </div>
+      <div class="container">
+        <div id="div1">
+          <button>Menu</button>
+        </div>
+        <div id="div1"><button>About</button></div>
+        <div id="div1"><button>Projects</button></div>
+      </div>
+    </nav>
+
+    <div id="div2">
+      <div id="div3">
+        <h2>Welcome to my webpage</h2>
+        HTML is the standard markup language for creating websites and CSS is
+        the language that describes the style of an HTML document. We will
+        combine HTML and CSS to create a basic web page.
+      </div>
+      <div id="div3">
+        <img src="./img/welcome.png" width="400px" />
+      </div>
+    </div>
+
+    <!--
+    <div class="dropdown">
+      <button>Profile</button>
+      <div class="dropdown-options">
+        <a href="#">Dashboard</a>
+        <a href="#">Setting</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+    -->
+  </body>
+</html>

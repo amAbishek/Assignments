@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: beige;
+    }
+    .div1 {
+      background-color: rgb(247, 200, 207);
+    }
+    #heading {
+      text-align: center;
+      color: darkblue;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+    }
+    #para1 {
+      text-align: justify;
+      line-height: 25px;
+      padding: 0 2rem 0 2rem;
+    }
+    #para2 {
+      padding: auto;
+      width: auto;
+    }
+    #img1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 2rem;
+    }
+    .flexbox {
+      display: flex;
+    }
+    #item {
+      margin: 2rem;
+    }
+    @media screen and (max-width: 680px) {
+      .flexbox {
+        display: block;
+      }
+    }
+    .container {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      border: 1px solid black;
+      background-color: aliceblue;
+    }
+
+    .ball {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border-radius: 50%;
+      animation: bounce 2s linear infinite, moveForward 4s linear infinite;
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        background-color: yellow;
+        bottom: 0;
+      }
+      50% {
+        background-color: orange;
+        bottom: 200px;
+      }
+    }
+
+    @keyframes moveForward {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: calc(100% - 50px);
+      }
+    }
+  </style>
+
+  <body>
+    <div class="div1">
+      <h1 id="heading">Welcome to my webpage</h1>
+      <p id="para1">
+        House of the Dragon is an American fantasy drama television series
+        created by George R. R. Martin and Ryan Condal for HBO. A prequel to
+        Game of Thrones (2011–2019), it is the second television series in the A
+        Song of Ice and Fire franchise. Condal and Miguel Sapochnik served as
+        the showrunners for the first season. Based on parts of Martin's 2018
+        book Fire & Blood, the series begins about 100 years after the Seven
+        Kingdoms are united by the Targaryen Conquest, nearly 200 years before
+        the events of Game of Thrones, and 172 years before the birth of
+        Daenerys Targaryen. Featuring an ensemble cast, the show portrays the
+        events leading up to the beginning of the decline of House Targaryen, a
+        devastating war of succession known as the "Dance of the Dragons". House
+        of the Dragon received a straight-to-series order in October 2019, with
+        casting beginning in July 2020 and principal photography starting in
+        April 2021 in the United Kingdom. The series premiered on August 21,
+        2022, with the first season consisting of ten episodes. Five days after
+        its premiere, the series was renewed for a second season. Sapochnik
+        departed as showrunner after the first season, leaving Condal to serve
+        as the sole showrunner for the second season. The second season is set
+        to premiere in mid-2024, consisting of 8 episodes.
+      </p>
+      <img src="./img/samsung.jpeg" id="img1" />
+      <div class="flexbox">
+        <div id="item">
+          <p id="para2">
+            House of the Dragon is an American fantasy drama television series
+            created by George R. R. Martin and Ryan Condal for HBO. A prequel to
+            Game of Thrones (2011–2019), it is the second television series in
+            the A Song of Ice and Fire franchise. Condal and Miguel Sapochnik
+            served as the showrunners for the first season. Based on parts of
+            Martin's 2018 book Fire & Blood, the series begins about 100 years
+            after the Seven Kingdoms are united by the Targaryen Conquest,
+            nearly 200 years before the events of Game of Thrones, and 172 years
+            before the birth of Daenerys Targaryen. Featuring an ensemble cast,
+            the show portrays the events leading up to the beginning of the
+            decline of House Targaryen, a devastating war of succession known as
+            the "Dance of the Dragons". House of the Dragon received a
+            straight-to-series order in October 2019, with casting beginning in
+            July 2020 and principal photography starting in April 2021 in the
+            United Kingdom. The series premiered on August 21, 2022, with the
+            first season consisting of ten episodes. Five days after its
+            premiere, the series was renewed for a second season. Sapochnik
+            departed as showrunner after the first season, leaving Condal to
+            serve as the sole showrunner for the second season. The second
+            season is set to premiere in mid-2024, consisting of 8 episodes.
+          </p>
+        </div>
+        <div id="item">
+          <img src="./img/samsung.jpeg" id="img1" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="ball"></div>
+      </div>
+    </div>
+  </body>
+</html>
